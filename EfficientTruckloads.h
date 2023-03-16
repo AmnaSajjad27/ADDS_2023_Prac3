@@ -2,8 +2,9 @@
 #define EFFICIENTTRUCKLOADS_H
 
 #include <map> 
+#include <ctype.h>
 
-class EfficentTruckloads
+class EfficientTruckloads
 {
     // using a map to store all the calculations so they can be refrenced and dont have to be calculated again
     private:
