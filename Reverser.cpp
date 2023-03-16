@@ -37,7 +37,7 @@ std::string helper_string (std::string characters, std::string accum, int index)
     return helper_string(characters, accum, --index);
 }
 
-std::string reverseString(std::string characters)
+std::string Reverser::reverseString(std::string characters)
 {
     return helper_string(characters, "",(characters.length()-1));
 }
