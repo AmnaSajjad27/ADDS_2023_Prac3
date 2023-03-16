@@ -2,21 +2,21 @@
 
 #include <map>
 
-int EfficientTruckloads::numTrucks(int numCrates, int loadsize)
+int EfficientTruckloads::numTrucks(int numCrates, int loadSize)
 {
     // less than 0, return -1 as before
-    if (numCrates < 0 || loadsize < 0)
+    if (numCrates < 0 || loadSize < 0)
     {
         return -1;
     }
 
     // if either input is 0, number of trucks needed is alsi 0
-    if (numCrates == 0 || loadsize == 0)
+    if (numCrates == 0 || loadSize == 0)
     {
         return 0;
     }
     // base case 
-    if (numCrates <= loadsize)
+    if (numCrates <= loadSize)
     {
         return 1;
     }
