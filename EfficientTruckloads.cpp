@@ -1,8 +1,8 @@
-# include "EfficientTruckloads.h"
+#include "EfficientTruckloads.h"
 
 #include <map>
 
-int EfficientTruckloads::numTrucks(int numCrates, int loadSize)
+int EfficentTruckloads::numTrucks(int numCrates, int loadSize)
 {
     // less than 0, return -1 as before
     if (numCrates < 0 || loadSize < 0)
@@ -37,7 +37,7 @@ int EfficientTruckloads::numTrucks(int numCrates, int loadSize)
     else
     {
         // use the map to find already existing calculated sums
-        temp = numTrucks(index1, loadsize) + numTrucks(index2, loadsize);
+        temp = numTrucks(index1, loadSize) + numTrucks(index2, loadSize);
         memory.insert(std::pair<int, int>(numCrates, temp));
     }
     return temp;
