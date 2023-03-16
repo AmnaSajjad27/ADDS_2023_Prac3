@@ -1,15 +1,20 @@
+#include "Truckloads.h"
+
 using namespace std;
 
-class Truckloads()
+int Truckloads::numTrucks(int numCrates, int loadSize)
 {
-    public:
-    int numTrucks(int numCrates, int loadSize)
+    if (numCrates < 0 || loadSize < 0)
+        return -1;
+
+    if (numCrates == 0 || loadSize == 0)
+        return 0;
+
+    // Base case 
+    if (loadSize >= numCrates)
     {
-        // Base case 
-        if (loadsize >= numCrates)
-        {
-            return 1;
-        }
-        return (numTrucks(numCrates/2 + numCrates % 2, loadSize) + numTrucks(numCrates/2, loadSize));
+        return 1;
     }
+        
+    return (numTrucks(numCrates/2 + numCrates % 2, loadSize) + numTrucks(numCrates/2, loadSize));
 }
