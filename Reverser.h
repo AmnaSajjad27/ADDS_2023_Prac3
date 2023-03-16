@@ -4,7 +4,7 @@
 
 #include <string>
 
-class Reverser()
+class Reverser
 {
     public:
     int reverseDigit(int numbers);
