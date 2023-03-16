@@ -32,12 +32,12 @@ std::string helper_string (std::string characters, std::string accum, int index)
         return accum;
     }
     // using at becuase it will help not get index out of bound 
-    accum = accum + letters.at(index);
+    accum = accum + characters.at(index);
 
     return helper_string(characters, accum, --index);
 }
 
 std::string reverseString(std::string characters)
 {
-    return helper_string(characters, "",(characters.length()-1))
+    return helper_string(characters, "",(characters.length()-1));
 }

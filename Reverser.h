@@ -10,6 +10,6 @@ class Reverser
     int reverseDigit(int numbers);
     std::string reverseString(std::string characters);
     
-}
+};
 
 #endif
