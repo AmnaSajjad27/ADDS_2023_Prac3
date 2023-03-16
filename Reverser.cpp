@@ -20,7 +20,7 @@ int Reverser::reverseDigit(int numbers)
     {
         return -1;
     }
-    return (numbers,0);
+    return helper_numbers(numbers,0);
 }
 
 // helper function 
